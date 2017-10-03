@@ -35,8 +35,6 @@ mon_help(int argc, char **argv, struct Trapframe *tf)
 
 	for (i = 0; i < ARRAY_SIZE(commands); i++)
 		cprintf("%s - %s\n", commands[i].name, commands[i].desc);
-
-	unsigned int a = 0x00646c72; cprintf("H%x Wo%s", 57616, &a);
 	return 0;
 }
 
